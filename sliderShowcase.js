@@ -95,7 +95,7 @@ class sliderShowcase {
   };
 
   startAutoSlide = (interval) => {
-    this.loopID = setInterval(() => {
+    this.loopID = setTimeout(() => {
       this.slideNext();
     }, interval);
   };

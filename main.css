@@ -45,6 +45,9 @@ nav {
   display: flex;
   z-index: 10;
 }
+.burger {
+  display: none;
+}
 .cnt-cntr {
   width: 100%;
   display: flex;

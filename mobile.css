@@ -1,0 +1,80 @@
+@media screen and (max-width: 630px) {
+  nav {
+    transition: height ease-in 200ms;
+  }
+  .burger {
+    display: flex;
+    position: absolute;
+    background: #fff;
+    margin: 14px;
+    width: 50px;
+    height: 43px;
+    box-sizing: border-box;
+    border: solid 3px #000;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .burger div {
+    background: #000;
+    width: 35px;
+    height: 4px;
+  }
+  .cnt-cntr {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nobel-icon {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-btns-cntr {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-btns-cntr button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* slider showcase */
+  .slider-showcase .slides {
+    flex-direction: column;
+  }
+  /* display product */
+  .display-section .tile {
+    padding-inline: 14vw;
+  }
+  /* news */
+  .news .text .main {
+    font-size: 20vw;
+    text-align: center;
+  }
+  .news .text .sub {
+    font-size: 6vw;
+  }
+  /* action-panel */
+  section.action-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .action-panel .list {
+    width: 90%;
+    text-align: center;
+  }
+  .action-panel .list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    font-size: 5px;
+  }
+}
