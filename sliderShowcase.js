@@ -13,7 +13,9 @@ class sliderShowcase {
    * First to ecxecute and loads the data from excell sheet
    */
   run() {
-    let file = new fetchExcell("slider_showcase");
+    let file = new fetchExcell(
+      "https://my.microsoftpersonalcontent.com/personal/6f6dbe47ed41720e/_layouts/15/download.aspx?UniqueId=2b78d71c-00fb-4c37-a9cf-d201d629d5da&Translate=false&tempauth=v1e.eyJzaXRlaWQiOiJmYzBlZmYzOS05NGQyLTQxZDUtODM0NS0wOGU5YjMyYTRmYWUiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL215Lm1pY3Jvc29mdHBlcnNvbmFsY29udGVudC5jb21AOTE4ODA0MGQtNmM2Ny00YzViLWIxMTItMzZhMzA0YjY2ZGFkIiwiZXhwIjoiMTczMTIzNzI2OCJ9.oX_KDnzqz4vbpge-QKM3hXWQvyAoPGLU5JZgXYOfjT_8ho8m1w3Js8LePFR0ujjOkHWbuewmDfxN3Y0OfUeOF2g9y3oQsuPtbRULlbLSdC4PAtTJ3j2jQxwvr6D-pNhA_OgUPsa39xjRrH8n1PDB8BR3RUmhD0wYlO8OUMpuiXevfjydtKS-9DlMW77GDmvhhcli61bG8LJ6LkOrFSxJz_-rSbJLuso__J88RhFvJmFzUE5EsKJ7nSIXKboR97zBcdc3VgNkoJGZApjAHtPQ3x51MKENCMVsXlk_7ZD-cr9JoXuLSISHHywdVC-StLcXVn6uzpjn2lmPr8riGRI9UF95eZYpozh2BRITPRCfahdOJDNaq-qqyykmwVgfyIubC5lnMrKM38dWsYEMCZ8acJlntQYGw1VpwCX43CSy9lBeSCassHE2BTOecGQH_6r_253xF8DxvttGmgMg0sjA5Q.6TYSKqQPj-JYcuNUYcJceVO0lbxTD4zSZEArawZAOUU&ApiVersion=2.0"
+    );
 
     (async () => {
       try {
@@ -68,7 +70,7 @@ class sliderShowcase {
       } else {
         let prev = this.element.children[this.loopIndex - 1];
         let next = this.element.children[this.loopIndex];
-        
+
         prev.style.left = "-100vw";
         next.style.left = 0;
       }

@@ -1,7 +1,6 @@
 class fetchExcell {
-  constructor(filename) {
-    this.filename = filename;
-    this.url = `.\\${filename}.xlsx`;
+  constructor(fileurl) {
+    this.url = fileurl;
     this.data;
   }
   /**
