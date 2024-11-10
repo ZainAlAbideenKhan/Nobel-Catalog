@@ -32,14 +32,41 @@
 }
 
 /*
+* * * * * * * * * *
+* Loading Screen  *
+* * * * * * * * * *
+*/
+.loading-screen {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -70px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  z-index: 15;
+}
+.loading-screen .main {
+  font-size: 9vw;
+  font-weight: 600;
+}
+.loading-screen .sub {
+  font-size: 1.5vw;
+}
+
+/*
 * * * * * *
 * Nav bar *
 * * * * * *
 */
 nav {
+  position: fixed;
   margin-top: -70px;
   background-color: #fff;
-  position: fixed;
   width: 100%;
   height: 70px;
   display: flex;

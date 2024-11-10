@@ -105,5 +105,6 @@ class sliderShowcase {
 let slider = new sliderShowcase(".slider-showcase");
 slider.run();
 setTimeout(() => {
+  slider.slideNext();
   slider.startAutoSlide(3000);
 }, 100);

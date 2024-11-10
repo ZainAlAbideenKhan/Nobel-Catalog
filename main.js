@@ -2,6 +2,9 @@ class main {
   constructor() {
     this.mediaFire = window.innerWidth >= 630 ? false : true;
   }
+  hideLoadingScreen() {
+    document.querySelector(".loading-screen").style.display = "none";
+  }
   setUI() {
     document
       .querySelector("nav .burger")
@@ -31,6 +34,7 @@ class main {
 window.addEventListener("load", () => {
   let admin = new main();
   admin.setUI();
+  admin.hideLoadingScreen();
 });
 
 window.addEventListener("resize", (e) => {
